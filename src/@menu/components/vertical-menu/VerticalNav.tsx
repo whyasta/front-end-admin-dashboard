@@ -32,6 +32,8 @@ import styles from '../../styles/vertical/verticalNavBgImage.module.css'
 
 // Default Config Imports
 import { defaultBreakpoints, verticalNavToggleDuration } from '../../defaultConfigs'
+import themeConfig from '@/configs/themeConfig'
+import { useMedia } from 'react-use'
 
 export type VerticalNavProps = HTMLAttributes<HTMLHtmlElement> & {
   width?: VerticalNavState['width']

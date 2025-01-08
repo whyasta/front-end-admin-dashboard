@@ -191,6 +191,12 @@ code {
   background-color: var(--mui-palette-background-paper) !important;
 }
 
+.ts-vertical-nav-image {
+  object-fit: contain !important;
+  object-position: bottom !important;
+  block-size: 105% !important;
+}
+
 /* .finpay-menu-button:hover,
 .finpay-menu-button:focus-visible {
   background-color: var(--mui-palette-action-hover);

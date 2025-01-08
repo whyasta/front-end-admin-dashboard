@@ -23,6 +23,7 @@ import { useSettings } from '@core/hooks/useSettings'
 
 // Style Imports
 import navigationCustomStyles from '@core/styles/vertical/navigationCustomStyles'
+import Image from 'next/image'
 
 type Props = {
   mode: Mode
@@ -121,6 +122,18 @@ const Navigation = (props: Props) => {
       {/* Nav Header including Logo & nav toggle icons  */}
       <NavHeader>
         <Link href='/'>
+          {/* <Logo /> */}
+          {/* {isDark &&
+            <div className='flex items-center'>
+              <img
+                src='/images/logo-finnet-white.png'
+                alt='verticalNav background'
+                style={{
+                  height: 100,
+                }}
+              />
+            </div>
+          } */}
           <Logo />
         </Link>
         {!(isCollapsed && !isHovered) && (

@@ -194,6 +194,7 @@ const Login = ({ mode }: { mode: SystemMode }) => {
             backgroundImage: `url(${characterIllustration})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
+            backgroundPosition: '25% 25%',
             height: '100%'
           }}>
           <div className="absolute top-[23%] w-full">
