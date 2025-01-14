@@ -9,13 +9,18 @@ export async function fetchData(uri: string, params = {}, method: string = 'POST
 
     logger.info('outcoming request', { traceId, method, url, params })
 
-    const response = await fetch(url, {
+    let request = {
       method: method,
       headers: {
         'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(params)
-    })
+      }
+    } as any
+
+    if (method !== 'GET') {
+      request.body = JSON.stringify(params)
+    }
+
+    const response = await fetch(url, request)
       .then(res => {
         return res.json()
       })

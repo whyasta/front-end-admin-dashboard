@@ -192,9 +192,10 @@ code {
 }
 
 .ts-vertical-nav-image {
-  object-fit: contain !important;
-  object-position: bottom !important;
-  block-size: 105% !important;
+  /* object-fit: contain !important; */
+  /* object-position: bottom !important; */
+  block-size: 50% !important;
+  transform: translateY(100%);
 }
 
 /* .finpay-menu-button:hover,

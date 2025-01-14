@@ -15,7 +15,7 @@ const TextFieldStyled = styled(TextField)<TextFieldProps>(({ theme }) => ({
     maxWidth: '100%',
     lineHeight: 1.153,
     position: 'relative',
-    fontSize: theme.typography.body1.fontSize,
+    fontSize: theme.typography.body2.fontSize,
     marginBottom: theme.spacing(1),
     color: 'var(--mui-palette-text-primary)',
     '&:not(.Mui-error).MuiFormLabel-colorPrimary.Mui-focused': {
@@ -250,7 +250,7 @@ const TextFieldStyled = styled(TextField)<TextFieldProps>(({ theme }) => ({
 }))
 
 const CustomTextField = forwardRef((props: TextFieldProps, ref) => {
-  const { size = 'medium', InputLabelProps, ...rest } = props
+  const { size = 'small', InputLabelProps, ...rest } = props
 
   return (
     <TextFieldStyled
